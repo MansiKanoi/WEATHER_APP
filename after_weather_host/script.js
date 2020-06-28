@@ -3,7 +3,7 @@ var inputValue = document.querySelector(".inputValue");
 //fetching the api
 button.addEventListener("click", function () {
   fetch(
-    "https:api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
       inputValue.value +
       "&appid=d54e69972be7a9e2e3bfeacef0ab6dc1"
   )
