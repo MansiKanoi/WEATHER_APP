@@ -3,7 +3,7 @@ var inputValue = document.querySelector(".inputValue");
 //fetching the api
 button.addEventListener("click", function () {
   fetch(
-    "https:api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
       inputValue.value +
       "&appid=d54e69972be7a9e2e3bfeacef0ab6dc1"
   )
@@ -70,7 +70,7 @@ button.addEventListener("click", function () {
     lat.innerHTML = "Latitude is:: " + result.city.coord.lat;
     long.innerHTML = "Longitude is:: " + result.city.coord.lon;
     visi();
-//collumn wise printing the result
+    //collumn wise printing the result
     var columns = document.getElementsByClassName("column");
     var count = 0;
     for (var i = 0; i < columns.length; i++) {
@@ -97,19 +97,19 @@ button.addEventListener("click", function () {
         Math.floor(result.list[count].main.temp - 273) + "°C"
       );
       temp.appendChild(tempText);
-        //icon
+      //icon
       var icon = document.createElement("img");
       icon.src =
         "http://openweathermap.org/img/wn/" +
         result.list[count].weather[0].icon +
         "@2x.png";
-        //humidity
+      //humidity
       var humi = document.createElement("li");
       var humiText = document.createTextNode(
         "Humidity levels at:: " + result.list[count].main.humidity + "%"
       );
       humi.appendChild(humiText);
-        //wind speed
+      //wind speed
       var ws = document.createElement("li");
       var wsText = document.createTextNode(
         "Wind is:: " + Math.floor(result.list[count].wind.speed) + "m/s"
