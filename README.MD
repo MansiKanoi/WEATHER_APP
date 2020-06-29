@@ -6,6 +6,8 @@
 
 ### Group no::2
 
+# html file in the beginning give the link for all the webpages.
+
 ### Milstones Achieved
 
 - fetched latitude of a given location through API call
