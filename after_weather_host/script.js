@@ -70,7 +70,8 @@ button.addEventListener("click", function () {
     lat.innerHTML = "Latitude is:: " + result.city.coord.lat;
     long.innerHTML = "Longitude is:: " + result.city.coord.lon;
     visi();
-    //collumn wise printing the result
+    //column wise printing the result
+
     var columns = document.getElementsByClassName("column");
     var count = 0;
     for (var i = 0; i < columns.length; i++) {
