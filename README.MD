@@ -6,7 +6,7 @@
 
 ### Group no::2
 
-# html file in the beginning give the link for all the webpages.
+# to view  all the webpages.
 - [link](https://mansikanoi.github.io/WEATHER_APP/)
 
 ### Milstones Achieved
